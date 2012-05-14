@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Base application theme is the default theme. -->
+	<style name="Theme" parent="android:Theme"></style>
+
+	<!-- Variation on the Light theme that turns off the title -->
+	<style name="Theme.IOSched" parent="android:style/Theme.Light">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+
+	<style name="HomeButton">
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:gravity">center_horizontal</item>
+		<item name="android:textSize">@dimen/text_size_medium</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/primary_text</item>
+		<item name="android:background">@null</item>
+	</style>
+
+	<style name="TitleBar">
+		<item name="android:id">@id/title_container</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">@dimen/title_height</item>
+		<item name="android:orientation">horizontal</item>
+		<item name="android:padding">4dip</item>
+		<item name="android:background">@color/title_background</item>id)
+	</style>
+
+	<style name="RaimonBar">
+		<item name="android:id">@id/title_container</item>
+		<item name="android:layout_width">fill_parent</item>
+<!-- 		edit -->
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@drawable/raimon</item>
+	</style>
+
+	<style name="TitleBarAction">
+		<item name="android:layout_width">@dimen/title_height</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+
+	<style name="TitleBarAction2">
+		<item name="android:layout_width">@dimen/title_height</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+
+	<style name="TitleBarText">
+		<item name="android:id">@id/title_text</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textSize">@dimen/text_size_large</item>
+<!-- 		<item name="android:paddingLeft">12dip</item> -->
+<!-- 		<item name="android:paddingRight">12dip</item> -->
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/title_text_alt</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+
+	<style name="TitleBarEditText">
+		<item name="android:id">@id/title_edit</item>
+		<item name="android:layout_width">0dip</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:textSize">@dimen/text_size_large</item>
+		<item name="android:paddingLeft">12dip</item>
+		<item name="android:paddingRight">12dip</item>
+		<item name="android:textColor">@color/title_text_alt</item>
+	</style>
+
+	<style name="TitleBarProgressIndicator" parent="@android:style/Widget.ProgressBar.Small">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginLeft">14dip</item>
+		<item name="android:layout_marginRight">15dip</item>
+		<item name="android:layout_marginTop">14dip</item>
+		<item name="android:indeterminate">true</item>
+	</style>
+
+	<style name="HorizontalSeparator">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">1dip</item>
+		<item name="android:background">@color/title_separator</item>
+	</style>
+
+<!-- 以下利用されてないと思われる ↓↓ -->
+<!-- 削除予定 -->
+	<style name="TitleBarSeparator">
+		<item name="android:layout_width">1dip</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:background">@color/title_separator</item>
+	</style>
+
+	<style name="TitleBarLogo">
+		<item name="android:id">@id/title_logo</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:clickable">true</item>
+	</style>
+
+	<style name="TitleBarSpring">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+
+	<style name="SessionTitle">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">@dimen/text_size_medium</item>
+		<item name="android:textColor">@color/primary_text</item>
+	</style>
+
+	<style name="SessionSubtitle">
+		<item name="android:textSize">@dimen/text_size_small</item>
+		<item name="android:textColor">@color/secondary_text</item>
+	</style>
+
+	<style name="NoteCreate">
+		<item name="android:textSize">18sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/primary_text</item>
+	</style>
+
+	<style name="NoteContent">
+		<item name="android:textSize">15sp</item>
+		<item name="android:lineSpacingMultiplier">1.1</item>
+		<item name="android:textColor">@color/primary_text</item>
+	</style>
+
+	<style name="NoteTime">
+		<item name="android:textSize">13sp</item>
+		<item name="android:textColor">@color/secondary_text</item>
+	</style>
+<!-- ここまで ↑↑ -->
+
+	<style name="ListItem">
+		<item name="android:minHeight">?android:attr/listPreferredItemHeight</item>
+		<item name="android:paddingLeft">10dip</item>
+		<item name="android:paddingRight">10dip</item>
+		<item name="android:paddingTop">8dip</item>
+		<item name="android:paddingBottom">8dip</item>
+	</style>
+
+	<style name="TextHeader">
+		<item name="android:textSize">18sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/primary_text</item>
+	</style>
+
+	<style name="TextHeaderTwo">
+		<item name="android:textSize">15sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/primary_text</item>
+	</style>
+
+	<style name="TextBody">
+		<item name="android:textSize">15sp</item>
+		<item name="android:lineSpacingMultiplier">1.1</item>
+		<item name="android:textColor">@color/secondary_text</item>
+	</style>
+
+	<style name="InformationForm">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@drawable/img_block_border</item>
+	</style>
+
+	<style name="InformationFormText">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:textColor">@color/primary_text</item>
+		<item name="android:textSize">@dimen/text_size_small</item>
+	</style>
+	<style name="InformationFormText2">
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:textColor">@color/primary_text</item>
+		<item name="android:textSize">@dimen/text_size_small</item>
+	</style>
+	<style name="InformationFormEdit">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_gravity">center_vertical</item>
+		<item name="android:textSize">@dimen/text_size_large</item>
+	</style>
+	<style name="InformationFormEdit2">
+		<item name="android:textSize">@dimen/text_size_large</item>
+	</style>
+	<style name="InformationFormEdit3">
+		<item name="android:textSize">@dimen/text_size_medium</item>
+	</style>
+	<style name="InformationFormImage">
+		<item name="android:layout_width">@dimen/form_image_width</item>
+		<item name="android:layout_height">@dimen/form_image_height</item>
+		<item name="android:layout_margin">0dip</item>
+		<item name="android:padding">10dip</item>
+		<item name="android:visibility">visible</item>
+		<item name="android:scaleType">centerCrop</item>
+		<!-- 		<item name="android:background">#00000000</item> -->
+	</style>
+	<style name="InformationFormImage2">
+		<item name="android:layout_margin">0dip</item>
+		<item name="android:padding">10dip</item>
+		<item name="android:visibility">visible</item>
+		<item name="android:scaleType">centerCrop</item>
+		<!-- 		<item name="android:background">#00000000</item> -->
+	</style>
+	<style name="InformationFormNoodleType">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:orientation">horizontal</item>
+	</style>
+	<style name="PlusButton">
+		<item name="android:background">@drawable/timer_btn_plus</item>
+	</style>
+	<style name="MinusButton">
+		<item name="android:background">@drawable/timer_btn_minus</item>
+	</style>
+
+	<style name="ListItemLayout">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:padding">6dip</item>
+	</style>
+
+	<style name="TimerInformationLayout">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:padding">20dip</item>
+	</style>
+
+	<!-- カスタムダイアログのシーン（背景設定） -->
+	<style name="CustomTheme" parent="@android:style/Theme.Black">
+		<item name="android:alertDialogStyle">@style/AlertDialog</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	<style name="AlertDialog">
+		<item name="android:fullBright">@android:color/transparent</item>
+		<item name="android:fullDark">@android:color/transparent</item>
+		<item name="android:topBright">@android:color/transparent</item>
+		<item name="android:topDark">@android:color/transparent</item>
+		<item name="android:centerBright">@android:color/transparent</item>
+		<item name="android:centerDark">@android:color/transparent</item>
+		<item name="android:centerMedium">@android:color/transparent</item>
+		<item name="android:bottomBright">@android:color/transparent</item>
+		<item name="android:bottomDark">@android:color/transparent</item>
+		<item name="android:bottomMedium">@android:color/transparent</item>
+	</style>
+
+
+	<style name="CustomDialog" parent="@android:style/Theme.Dialog">
+	  	<item name="android:windowBackground">@drawable/custom_dialog_bg</item>
+	  	<item name="android:textColorPrimary">@color/primary_text</item>
+		<item name="android:buttonStyle">@style/ButtonStyle</item>
+		<item name="android:alertDialogStyle">@style/AlertDialog</item>		
+	</style>
+	    
+	    
+	<!-- QuickAction styles -->
+	<style name="Animations" />
+
+	<!-- PopDownMenu -->
+	<style name="Animations.PopDownMenu" />
+
+	<style name="Animations.PopDownMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+	</style>
+
+	<style name="Animations.PopDownMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+	</style>
+
+	<style name="Animations.PopDownMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+	</style>
+
+	<style name="Animations.PopDownMenu.Reflect">
+		<item name="@android:windowEnterAnimation">@anim/pump_top</item>
+		<item name="@android:windowExitAnimation">@anim/disappear</item>
+	</style>
+
+	<!-- PopUpMenu -->
+	<style name="Animations.PopUpMenu" />
+
+	<style name="Animations.PopUpMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+	</style>
+
+	<style name="Animations.PopUpMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+	</style>
+
+	<style name="Animations.PopUpMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+	</style>
+
+	<style name="Animations.PopUpMenu.Reflect">
+		<item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/disappear</item>
+	</style>
+	<!-- QuickAction styles end -->
+
+	<style name="PickerButton">
+		<item name="android:width">30dip</item>
+		<item name="android:height">30dip</item>
+	</style>
+
+	<style name="TimeTextView">
+		<item name="android:textSize">60sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/primary_text</item>
+	</style>
+
+	<style name="ButtonStyle">
+		<item name="android:layout_width">90dip</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@drawable/btn_bg</item>
+<!-- 		<item name="android:padding">10dip</item> -->
+		<item name="android:textColor">@color/primary_text</item>
+		<item name="android:textSize">@dimen/text_size_medium</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:gravity">center</item>
+	</style>
+    <style name="Theme.Transparent" parent="android:style/Theme.Translucent">
+        <item name="android:windowBackground">@color/searchactivity_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

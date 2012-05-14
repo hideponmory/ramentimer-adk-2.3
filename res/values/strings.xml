@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<string name="app_name">Social Noodle Timer</string>
+	<string name="description_logo">RamenTimer</string>
+	<string name="description_refresh">Refresh</string>
+	<string name="description_search">Search</string>
+
+	<!-- タイマーで利用の文字列 -->
+	<string name="timer_timer">Timer</string>
+
+	<!-- タイマーで利用の文字列 -->
+
+	<!-- タイマーのリセット確認ダイアログで利用の文字列 -->
+	<string name="dialog_timer_verification_title">Do you want to reset?</string>
+	<string name="dialog_timer_verification_ok">Reset</string>
+	<string name="dialog_timer_verification_cancel">Back</string>
+
+	<!-- タイマーのリセット確認ダイアログで利用の文字列 -->
+
+	<!-- ダッシュボードで利用の文字列 -->
+	<string name="dashboard_barcode">Load</string>
+	<string name="dashboard_timer">Timer</string>
+	<string name="dashboard_create">Register</string>
+	<string name="dashboard_history">History</string>
+	<string name="dashboard_favorite">Favorites</string>
+	<string name="dashboard_rsearch">Manual Search</string>
+	<string name="dashboard_ramenlist">List</string>
+	<string name="dashboard_text">Share instant noodle cooking minutes with everybody!</string>
+	<string name="dashboard_versionname_hai"> bowls</string>
+	<string name="dashboard_toroku">Entry</string>
+	<string name="dashboard_countu">items</string>
+	<string name="dashboard_countu_get">Loading...</string>
+	<string name="dashboard_countu_fail">Fail</string>
+	<!-- ダッシュボードで利用の文字列 -->
+
+	<!-- 登録画面で利用の文字列 -->
+	<string name="create_products">Product</string>
+	<string name="create_time">Cooking minutes</string>
+	<string name="create_create">Register</string>
+	<string name="create_set_image_message">Please upload an image by tapping NoImage icon.
+	</string>
+	<string name="create_fill_form_message">Please fill out colums.</string>
+	<string name="create_quick_action_gallery">Gallery</string>
+	<string name="create_quick_action_camera">Camera</string>
+	<string name="create_set_time_message">Please set Cooking minutes</string>
+	<string name="checkbox_twitter">Post Twitter</string>
+	
+
+	<!-- 登録画面で利用の文字列 -->
+
+	<!-- 登録画面からタイマー起動確認のダイアログで利用の文字列 -->
+	<string name="dialog_create_goto_title">Start timer?</string>
+	<string name="dialog_create_goto_timer">Timer</string>
+	<string name="dialog_create_goto_back">Back</string>
+
+	<!-- 登録画面からタイマー起動確認のダイアログで利用の文字列 -->
+
+	<!-- 登録画面のtwitter認証確認ダイアログで利用の文字列 -->
+	<string name="dialog_authorization_twitter_title">Confirm</string>	
+	<string name="dialog_authorization_twitter_message">Noodle registration requires authorization of twitter. \n authorization twitter?</string>
+	<string name="dialog_authorization_twitter_authorization">Authorization</string>
+	<string name="dialog_authorization_twitter_cancel">Cancel</string>
+	<!-- 登録画面のtwitter認証確認ダイアログで利用の文字列 -->
+
+	<!-- 登録画面のtwitterpostで利用の文字列 -->
+	<string name="post_twitter_success">twitter post success! </string>
+	<string name="post_twitter_failure">twitter post failure... </string>
+	<!-- 登録画面のtwitterpost確認ダイアログで利用の文字列 -->
+
+	<!-- 登録画面の登録情報確認ダイアログで利用の文字列 -->
+	<string name="dialog_create_verification_title">Ready for registration?</string>
+	<string name="dialog_create_verification_create">Register</string>
+	<string name="dialog_create_verification_back">Back</string>
+
+	<!-- 登録画面の登録情報確認ダイアログで利用の文字列 -->
+
+	<!-- 履歴で利用の文字列 -->
+	<string name="history_history">History</string>
+	<string name="history_search_hint">Search for products in history</string>
+	<string name="empty_history">Not Found</string>
+	<!-- 履歴で利用の文字列 -->
+
+
+	<!-- 商品登録検索で利用の文字列 -->
+	<string name="ramensearch_ramensearch">Search for products</string>
+	<string name="ramensearch_search">Search</string>
+	<string name="ramensearch_jancode">EAN code</string>
+	<string name="ramensearch_jancodealert">Please input EAN code</string>
+	<!-- 商品登録検索で利用の文字列 -->
+
+
+	<!-- 検索で利用の文字列 -->
+	<string name="search_search">Search</string>
+	<string name="search_alert">Please input Search Keyword</string>
+	<string name="search_searching">Searching...</string>
+	<string name="search_searchstring">EAN code or Name</string>
+	<!-- 検索で利用の文字列 -->
+
+	<!-- お気に入りで利用の文字列 -->
+	<string name="favorite_favorite">Favorites</string>
+	<string name="favorite_search_hint">Search for products in favorites</string>
+	<string name="empty_favorite">Not Found</string>
+	<!-- お気に入りで利用の文字列 -->
+
+	<!-- バグレポート送信時のダイアログ文字列 -->
+	<string name="bugreport_title">Transmit bug report</string>
+	<string name="bugreport_message">Please take a time to send a bug report to
+		developers. Thank you for your cooperations.</string>
+	<string name="dialog_yes">Yes</string>
+	<string name="dialog_no">No</string>
+	<!-- バグレポート送信時のダイアログ文字列 -->
+
+	<!-- GAE通信文字列 -->
+	<string name="sql_local_error">Error in transaction of local database.</string>
+	<string name="sql_gae_error">Error in transaction with server.</string>
+	<string name="sql_unknown_error">Unknown error.</string>
+	<string name="sql_complete">Registration success.</string>
+	<string name="sql_already_created">Already registered.</string>
+	<string name="sql_gae_entry_error">Registration to server failed.</string>
+	<string name="sql_local_entry_error">Registration to local database failed.</string>
+	<string name="No_Storage_Message">Please insert an SD card.</string>
+	<string name="min_unit">min</string>
+	<string name="sec_unit">sec</string>
+	<string name="decimalformat">yyyy/MM/dd HH:mm</string>
+	<!-- QRコードスキャナーのインストール問合せダイアログ -->
+	<string name="no_qrcode_title">Barcode scanner not found</string>
+	<string name="no_qrcode_message">Please install Barcode scanner from Android Market.
+	</string>
+	<string name="timer_notification_message">Now counting...</string>
+	<!-- ボタン文字列 -->
+	<string name="start_button">Start</string>
+	<string name="reset_button">Reset</string>
+	<string name="end_button">End</string>
+	<string name="yes_button">Yes</string>
+	
+	<string name="create_verification_message">This product is not registered on the server. \nWould you post it into the database of noodles?</string>
+	<string name="nodata_message">This product is not registered on the server.</string>
+	<string name="jan_code">EAN code</string>
+	<!-- 警告 -->
+	<string name="alert_messeage">Alert</string>
+	<!-- ヘルプ -->
+	<string name="help">help</string>
+	<!-- ヘルプサイトURL -->
+	<string name="help_url">http://sites.google.com/site/androidnagoyatsubu/apps/ramentimer_help_en</string>
+	<!-- ラーメンタイマーリストページ URL -->
+	<string name="ramen_list_url">http://ramentimer.appspot.com/</string>
+	<!-- twitterにポストする文字列 -->
+	<string name="twitter_post_message1">has registered [</string>
+	<string name="twitter_post_message2">] with Social Noodle Timer. #ramentimer</string>
+	    	
+</resources>

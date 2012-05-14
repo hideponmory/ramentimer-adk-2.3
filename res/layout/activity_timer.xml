@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1">
+
+    <!-- ActionBar -->
+    <LinearLayout style="@style/TitleBar">
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:id="@+id/TitleHomeButton"
+            android:onClick="onLogoClick"
+            android:src="@drawable/ic_title_home"/>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            style="@style/TitleBarText"
+            android:text="@string/timer_timer" />
+	
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:id="@+id/TitleReaderButton"
+            android:onClick="onReaderButtonClick"
+            android:src="@drawable/ic_title_barcode" />
+<!-- edit Ramen Search -->
+<!-- @drawable/ic_title_rsearch -->
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:id="@+id/TitleSearchButton"
+            android:onClick="onSearchButtonClick"
+            android:src="@drawable/ic_title_hsearch" />
+
+        <requestFocus />
+    </LinearLayout>
+    <!-- ActionBar End -->
+
+<!-- edit -->
+    <LinearLayout style="@style/RaimonBar"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/TimerInformationLayout"
+        android:id="@+id/TimerInfoFrame"
+        android:gravity="center">
+
+		<ViewStub 
+			android:id="@+id/NoodleInfoViewStub"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+			
+    </LinearLayout>
+
+	<include layout="@layout/timer_set"/>
+		
+    <LinearLayout 
+        android:orientation="vertical" 
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView 
+        	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TimerImageView"
+	        android:onClick="onModeChangeClick"
+	        android:clickable="true"
+            android:src="@drawable/img_alarm_default"/>
+
+        <Button 
+            android:text="@string/start_button"
+            android:id="@+id/TimerStartButton"
+            style="@style/ButtonStyle"/>
+        <Button 
+            android:id="@+id/TimerResetButton"
+            android:text="@string/reset_button"
+            style="@style/ButtonStyle"
+            android:visibility="gone"/>
+        <Button 
+            android:id="@+id/TimerEndButton"
+            android:text="@string/end_button"
+            style="@style/ButtonStyle"
+            android:visibility="visible"/>
+    </LinearLayout>
+</LinearLayout>

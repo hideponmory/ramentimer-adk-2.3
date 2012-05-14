@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/background1"
+	android:orientation="vertical">
+	
+	<!-- ActionBar -->
+	<LinearLayout style="@style/TitleBar">
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:onClick="onLogoClick"
+            android:src="@drawable/ic_title_home"/>
+        <TextView 
+        	style="@style/TitleBarText"
+        	android:text="@string/ramensearch_ramensearch"/>
+ 
+		<requestFocus />
+	</LinearLayout>  
+	<!-- ActionBar End -->
+	
+<!-- edit -->
+    <LinearLayout style="@style/RaimonBar"/>
+	
+	<LinearLayout 
+		style="@style/InformationForm"
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:orientation="vertical">
+
+		<LinearLayout 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+			<LinearLayout 
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:orientation="vertical">
+				<TextView 
+					style="@style/InformationFormText2"
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content"
+					android:text="@string/jan_code"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<EditText 
+			style="@style/InformationFormEdit2"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/form_edittext_height"
+			android:hint="@string/ramensearch_jancode" 
+			android:id="@+id/SearchBarcodeEdit"
+			android:gravity="center_vertical"
+			android:maxLength="13"
+			android:inputType="number"/>			
+	</LinearLayout> 
+
+
+	<Button
+		android:id="@+id/SearchButton"
+		android:text="@string/ramensearch_search"
+		android:layout_gravity="center_horizontal"
+		android:onClick="onSearchClick"
+        style="@style/ButtonStyle"
+		/>
+	<ImageView
+		android:id="@+id/ProgressIcon"
+		android:src="@drawable/img_progress"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:visibility="gone"
+		/>
+	
+</LinearLayout>

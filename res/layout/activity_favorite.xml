@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/background1"
+	android:orientation="vertical">
+	
+	<!-- ActionBar -->
+	<LinearLayout style="@style/TitleBar">
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:onClick="onLogoClick"
+            android:src="@drawable/ic_title_home"/>
+        <TextView 
+        	style="@style/TitleBarText"
+        	android:text="@string/favorite_favorite"/>	
+        <EditText
+        	style="@style/TitleBarEditText"
+        	android:hint="@string/favorite_search_hint"
+        	android:visibility="gone"/>
+<!-- add Favorite Search -->
+<!-- @drawable/ic_title_fsearch -->
+    <!--     	
+		<ImageButton 
+			style="@style/TitleBarAction2" 
+			android:onClick="onSearchButtonClick"
+			android:src="@drawable/ic_title_search" />
+   -->
+			
+		<requestFocus />
+	</LinearLayout>  
+	<!-- ActionBar End -->
+
+<!-- edit -->
+    <LinearLayout style="@style/RaimonBar"/>
+
+<!-- add favorit serch -->
+	<LinearLayout style="@style/TitleBar">
+<!-- edit hint Barcode & Item Name -->
+		<EditText 
+			style="@style/InformationFormEdit3"
+			android:layout_width="0dip"
+			android:layout_weight="1"
+			android:layout_height="@dimen/form_edittext_height"
+			android:paddingLeft="4dip"
+			android:hint="@string/search_searchstring" 
+			android:gravity="center_vertical"
+			android:maxLength="13"
+			android:id="@+id/SearchBarcodeEdit"/>			
+	<!-- edit ImageButton -->
+        <ImageButton
+            style="@style/TitleBarAction"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right"
+            android:src="@drawable/ic_title_fsearch" android:onClick="onSearchClick"/>
+	</LinearLayout>
+<!-- add Raimon -->
+    <LinearLayout style="@style/RaimonBar"/>
+
+	<ListView 
+		android:id="@android:id/list"
+		android:divider="@drawable/img_line_dotted"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+	</ListView>
+	<TextView
+		android:id="@+id/TextViewEmptyFavorite"
+		android:text="@string/empty_favorite"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+       android:layout_gravity="center"
+       android:gravity="center"
+		android:visibility="gone" >
+	</TextView>
+</LinearLayout>

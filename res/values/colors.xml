@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<color name="title_background">#fff5f5f5</color>
+	<color name="title_text">#ffffffff</color>
+	<color name="title_text_alt">#ff000000</color>
+	<color name="background1">#fff5f5f5</color>
+	<color name="background2">#ffd5ddeb</color>
+
+	<!-- らいもん画像に黄色横線上下追加したので現在利用してない -->
+	<color name="title_separator">#ffffCC00</color>
+
+	<color name="primary_text">#ff333333</color>
+	<color name="secondary_text">#ffcccccc</color>
+	<color name="red">#ffcc0000</color>
+	<color name="yellow">#ffffcc00</color>
+	<color name="session_foreground_past">#ff999999</color>
+
+	<color name="pinned_header_background">#ff202020</color>
+
+	<color name="clear">#00000000</color>
+	
+	<!-- カスタムダイアログの背景のフレームの色 -->
+	<color name="dialog_frame">#ee880000</color>
+	<!-- カスタムダイアログの背景の色 グラデーションの上（top）と下（bottom） -->
+	<color name="dialog_gradient_top">#eef5f5f5</color>
+	<color name="dialog_gradient_bottom">#ccd5d5d5</color>
+	
+	<!-- 件数取得関連のメッセージ用 -->
+	<color name="count_message_getorfail">#dddddddd</color>
+	<color name="count_message">#ff333333</color>
+	<!-- ボタンのenable disable -->
+	<!-- 
+	<color name="button_disabled">#dddddddd</color>
+	<color name="button_enabled">#ff333333</color>
+	 -->
+	<color name="searchactivity_background">#00ff0000</color>	
+</resources>

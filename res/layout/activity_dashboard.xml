@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root"
+    android:orientation="vertical"
+    android:background="@color/background1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+    	style="@style/TitleBar">
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:src="@drawable/home_icon" android:onClick="onClickLogo"/>
+        <ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+            android:src="@drawable/home_title_appname" android:onClick="onClickTitle"/>
+    </LinearLayout>
+
+<!-- RaimonBar -->
+<!--         <LinearLayout style="@style/RaimonBar"/> -->
+<!-- edit -->
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/raimon"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:layout_weight="1"
+            android:paddingTop="4dip">
+            <Button android:id="@+id/Button01"
+                style="@style/HomeButton"
+                android:onClick="onReaderButtonClick"
+                android:text="@string/dashboard_barcode"
+                android:drawableTop="@drawable/home_btn_barcode"/>
+            <Button android:id="@+id/Button02"
+                style="@style/HomeButton"
+                android:onClick="onTimerButtonClick"
+                android:text="@string/dashboard_timer"
+                android:drawableTop="@drawable/home_btn_timer"/>
+        </LinearLayout>
+	
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:layout_weight="1"
+            android:paddingTop="4dip">
+			<Button android:id="@+id/Button03"
+	            style="@style/HomeButton"
+	            android:onClick="onFavoriteButtonClick"
+	            android:text="@string/dashboard_favorite"
+	            android:drawableTop="@drawable/home_btn_favorite"/>
+			<Button android:id="@+id/Button04"
+	            style="@style/HomeButton"
+	            android:onClick="onHistoryButtonClick"
+	            android:text="@string/dashboard_history"
+	            android:drawableTop="@drawable/home_btn_history"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:paddingTop="4dip">
+			<Button android:id="@+id/Button05"
+	            style="@style/HomeButton"
+	            android:onClick="onRamenListButtonClick"
+	            android:text="@string/dashboard_ramenlist"
+	            android:drawableTop="@drawable/home_btn_list"/>
+			<Button android:id="@+id/Button06"
+	            style="@style/HomeButton"
+	            android:onClick="onRSearchButtonClick"
+	            android:text="@string/dashboard_rsearch"
+	            android:drawableTop="@drawable/home_btn_rsearch"/>
+        </LinearLayout>
+    </LinearLayout>
+
+<!-- RaimonBar -->
+	<LinearLayout style="@style/RaimonBar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/now_ramen"
+        android:background="@color/background1"
+        android:gravity="bottom">
+  		
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dip">
+            <Button
+                android:id="@+id/ButtonLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:gravity="center"
+                android:onClick="onTsubuLogoClick"
+				android:background="@drawable/tsubu_logo"/>
+ 
+						<LinearLayout
+	            android:orientation="vertical"
+	            android:layout_width="0dip"
+	            android:layout_weight="1"
+	            android:layout_height="fill_parent"
+	            android:paddingLeft="4dip">
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:layout_gravity="center_vertical"
+	                android:gravity="center"
+	                android:textSize="12sp"
+	                android:textColor="@color/primary_text"
+	                android:text="@string/dashboard_text"/>
+	         
+		         <LinearLayout
+		            android:orientation="horizontal"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:gravity="right">
+		            <TextView
+		            	android:id="@+id/ramen_count"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+						android:textSize="12sp"/>    
+		            <TextView
+						android:id="@+id/ramen_version"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+		                android:layout_gravity="center_vertical"
+		                android:paddingLeft="8dip"
+						android:textSize="12sp"
+						android:textColor="@color/primary_text"/>  
+	        	</LinearLayout>
+
+			</LinearLayout>
+
+    	</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

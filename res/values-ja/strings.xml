@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">みんなのラーメンタイマー</string>
+
+	<string name="description_logo">RamenTimer</string>
+	<string name="description_refresh">Refresh</string>
+	<string name="description_search">Search</string>
+
+	<!-- タイマーで利用の文字列 -->
+	<string name="timer_timer"> タイマー</string>
+	<!-- タイマーで利用の文字列 -->
+
+	<!-- タイマーのリセット確認ダイアログで利用の文字列 -->
+	<string name="dialog_timer_verification_title">リセットしますか？</string>
+	<string name="dialog_timer_verification_ok">リセット</string>
+	<string name="dialog_timer_verification_cancel">戻る</string>
+	<!-- タイマーのリセット確認ダイアログで利用の文字列 -->
+
+	<!-- ダッシュボードで利用の文字列 -->
+	<string name="dashboard_barcode">読込</string>
+	<string name="dashboard_timer"> タイマー</string>
+	<string name="dashboard_create">登録</string>
+	<string name="dashboard_history">履歴</string>
+	<string name="dashboard_favorite">お気に入り</string>
+	<string name="dashboard_rsearch">バーコード検索</string>
+	<string name="dashboard_ramenlist">ラーメン一覧</string>
+	<string name="dashboard_text">みんなで作ろうラーメン茹で時間</string>
+	<string name="dashboard_versionname_hai">杯</string>
+	<string name="dashboard_toroku">登録数</string>
+	<string name="dashboard_countu">軒</string>
+	<string name="dashboard_countu_get">問い合せ中...</string>
+	<string name="dashboard_countu_fail">軒数取得失敗</string>
+	<!-- ダッシュボードで利用の文字列 -->
+
+	<!-- 登録画面で利用の文字列 -->
+	<string name="create_products">商品</string>
+	<string name="create_time">時間</string>
+	<string name="create_create">登録 </string>
+	<string name="create_set_image_message">画像をセットしてください\n（NoImageをタッチ）</string>
+	<string name="create_fill_form_message">入力項目を埋めてください</string>
+	<string name="create_quick_action_gallery">ギャラリー</string>
+	<string name="create_quick_action_camera">カメラ</string>
+	<string name="create_set_time_message">時間をセットしてください</string>
+	<string name="checkbox_twitter">Twitterに投稿する</string>
+	<!-- 登録画面で利用の文字列 -->
+
+	<!-- 登録画面からタイマー起動確認のダイアログで利用の文字列 -->
+	<string name="dialog_create_goto_title">タイマーを起動しますか？</string>
+	<string name="dialog_create_goto_timer">タイマー</string>
+	<string name="dialog_create_goto_back">戻る</string>
+	<!-- 登録画面からタイマー起動確認のダイアログで利用の文字列 -->
+
+	<!-- 登録画面のtwitter認証確認ダイアログで利用の文字列 -->
+	<string name="dialog_authorization_twitter_title">登録にはtwitter認証が必要です</string>
+	<string name="dialog_authorization_twitter_message">twitter認証を行いますか？</string>
+	<string name="dialog_authorization_twitter_authorization">認証</string>
+	<string name="dialog_authorization_twitter_cancel">キャンセル</string>
+	<!-- 登録画面のtwitter認証確認ダイアログで利用の文字列 -->
+
+
+	<!-- 登録画面のtwitterpostで利用の文字列 -->
+	<string name="post_twitter_success">twitterに投稿しました </string>
+	<string name="post_twitter_failure">twitterへの投稿が失敗しました </string>
+	<!-- 登録画面のtwitterpost確認ダイアログで利用の文字列 -->
+
+	<!-- 登録画面の登録情報確認ダイアログで利用の文字列 -->
+	<string name="dialog_create_verification_title">これで登録しますか？</string>
+	<string name="dialog_create_verification_create">登録</string>
+	<string name="dialog_create_verification_back">戻る</string>
+	<!-- 登録画面の登録情報確認ダイアログで利用の文字列 -->
+
+
+
+	<!-- 履歴で利用の文字列 -->
+	<string name="history_history">履歴</string>
+	<string name="history_search_hint">履歴検索</string>
+	<string name="empty_history">"該当する履歴がありません"</string>
+	<!-- 履歴で利用の文字列 -->
+
+
+	<!-- お気に入りで利用の文字列 -->
+	<string name="favorite_favorite">お気に入り</string>
+	<string name="favorite_search_hint">お気に入り検索</string>
+	<string name="empty_favorite">"該当するお気に入りがありません"</string>
+	<!-- お気に入りで利用の文字列 -->
+
+
+	<!-- バグレポート送信時のダイアログ文字列 -->
+	<string name="bugreport_title">バグレポート送信</string>
+	<string name="bugreport_message">バグレポートを開発者へ送信します。よろしいですか？</string>
+	<string name="dialog_yes">はい</string>
+	<string name="dialog_no">いいえ</string>
+	<!-- バグレポート送信時のダイアログ文字列 -->
+
+	<!-- 商品登録検索で利用の文字列 -->
+	<string name="ramensearch_ramensearch">登録商品検索</string>
+	<string name="ramensearch_search">検索</string>
+	<string name="ramensearch_jancode">JANコード</string>
+	<string name="ramensearch_jancodealert">JANコードを入力してください</string>
+	<!-- 商品登録検索で利用の文字列 -->
+
+	<!-- 検索で利用の文字列 -->
+	<string name="search_search">検索</string>
+	<string name="search_alert">検索文字列を入力してください</string>
+	<string name="search_searching">検索中...</string>
+	<string name="search_searchstring">JANコード or 名前</string>
+	
+	<!-- 検索で利用の文字列 -->
+
+
+	<!-- GAE通信文字列 -->
+	<string name="sql_local_error">ローカルデータ問い合わせでエラーが発生しました</string>
+	<string name="sql_gae_error">サーバー問い合わせでエラーが発生しました</string>
+	<string name="sql_unknown_error">原因不明のエラーが発生しました</string>
+	<string name="sql_complete">登録完了</string>
+	<string name="sql_already_created">既に登録されています</string>
+	<string name="sql_gae_entry_error">サーバーへの登録に失敗しました</string>
+	<string name="sql_local_entry_error">ローカルへの登録に失敗しました</string>
+
+	<string name="No_Storage_Message">SDカードを挿入してください</string>
+	<string name="min_unit">分</string>
+	<string name="sec_unit">秒</string>
+	<string name="decimalformat">yyyy年MM月dd日 HH時mm分</string>
+
+	<!-- QRコードスキャナーのインストール問合せダイアログ -->
+	<string name="no_qrcode_title">QR Code Scanner not found</string>
+	<string name="no_qrcode_message">QRコードスキャナーをAndroid Marketからインストールしますか？</string>
+	<string name="timer_notification_message">ラーメンタイマーカウント中</string>
+
+	<!-- ボタン文字列 -->
+	<string name="start_button">開始</string>
+	<string name="reset_button">リセット</string>
+	<string name="end_button">終了</string>
+	<string name="yes_button">はい</string>
+
+	<string name="create_verification_message">この商品は登録されていません。\nみんなのラーメンデータベースに登録しますか？</string>
+	<string name="nodata_message">この商品は登録されていません</string>
+	<string name="jan_code">JANコード</string>
+	<!-- 警告 -->
+	<string name="alert_messeage">警告</string>
+	<string name="help">ヘルプ</string>
+	<!-- ヘルプサイトURL -->
+	<string name="help_url">http://sites.google.com/site/androidnagoyatsubu/apps/ramentimer_help</string>
+	<!-- ラーメンタイマーリストページ URL -->
+	<string name="ramen_list_url">http://ramentimer.appspot.com/</string>
+
+	<!-- twitterにポストする文字列 -->
+	<string name="twitter_post_message1">がみんなのラーメンタイマーに 「</string>
+	<string name="twitter_post_message2">」を登録しました！ #ramentimer</string>
+	    	
+</resources>

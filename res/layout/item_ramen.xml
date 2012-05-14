@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="@dimen/list_item_padding"
+	android:paddingRight="@dimen/list_item_padding"
+	android:background="@android:color/transparent"
+	android:orientation="horizontal">
+
+	<LinearLayout
+		style="@style/ListItemLayout"
+		android:id="@+id/layout_root"
+		android:background="@drawable/bg_selector"
+		android:gravity="center"
+		android:orientation="horizontal">
+			
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/form_image_height"
+			android:layout_weight="1"
+			android:layout_gravity="center_vertical"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/date"
+				android:layout_weight="1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				style="@style/InformationFormText2"
+				android:visibility="gone"/>
+			<TextView
+				android:id="@+id/number"
+				android:layout_weight="1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				style="@style/InformationFormText2"
+				android:visibility="gone"/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				style="@style/InformationFormText2"
+				android:id="@+id/JanText"/>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				style="@style/InformationFormText2"
+				android:id="@+id/RamenName"/>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				style="@style/InformationFormText2"
+				android:id="@+id/BoilingTime"/>				
+		</LinearLayout>
+		<ImageView
+			style="@style/InformationFormImage"
+			android:layout_gravity="center_vertical"
+			android:id="@+id/NoodleImage"/>
+	</LinearLayout>	
+</LinearLayout>

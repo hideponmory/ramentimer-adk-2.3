@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal" >
+	
+	<TextView 
+		android:text="3"
+	 	android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="@dimen/number_to_button"
+		style="@style/TimeTextView"
+		android:gravity="center_vertical"
+	 	android:id="@+id/MinTextView"/>
+	<TextView 
+		android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:layout_toLeftOf="@+id/MinDownButton"
+	   	android:layout_alignBottom="@+id/MinTextView"
+	   	android:textColor="@color/primary_text"
+	   	android:id="@+id/MinDiscriptionTextView"
+	   	android:text="@string/min_unit"/>
+	<Button 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/MinTextView"
+		android:id="@+id/MinUpButton"
+		android:onClick="onMinUpClick"
+		android:gravity="center_vertical"
+		style="@style/PlusButton"/>
+	<Button 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/MinTextView"
+		android:layout_below="@+id/MinUpButton"
+		android:id="@+id/MinDownButton"
+		android:onClick="onMinDownClick"
+		style="@style/MinusButton"/>	
+	<TextView 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="@dimen/number_to_button"
+		android:layout_marginLeft="@dimen/number_to_button"
+		android:text="00"
+		android:layout_toRightOf="@+id/MinUpButton"
+		android:gravity="center_vertical"
+		style="@style/TimeTextView"
+		android:id="@+id/SecTextView"/>	
+	<TextView 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_alignBottom="@+id/SecTextView"
+		android:layout_toLeftOf="@+id/SecDownButton"
+		android:textColor="@color/primary_text"
+		android:text="@string/sec_unit"/>
+	<Button 
+      	android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/SecUpButton"
+		android:layout_toRightOf="@+id/SecTextView"
+		android:onClick="onSecUpClick"
+		android:gravity="center_vertical"
+		style="@style/PlusButton"/>
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/SecTextView"
+		android:layout_below="@+id/SecUpButton"
+		android:id="@+id/SecDownButton"
+		android:onClick="onSecDownClick"
+		style="@style/MinusButton"/>
+	       
+</RelativeLayout>

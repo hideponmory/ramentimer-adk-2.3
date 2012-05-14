@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background1"
+    android:orientation="vertical" >
+	
+	<!-- ActionBar -->
+	<LinearLayout style="@style/TitleBar">
+        <ImageButton
+            style="@style/TitleBarAction"
+            android:onClick="onLogoClick"
+            android:src="@drawable/ic_title_home"/>
+        <TextView 
+        	style="@style/TitleBarText"
+        	android:text="@string/create_create"/>
+<!-- delete -->
+<!-- 		<ImageButton  -->
+<!-- 			style="@style/TitleBarAction"  -->
+<!-- 			android:onClick="onHistoryButtonClick" -->
+<!-- 			android:src="@drawable/ic_title_history" /> -->
+
+<!-- 		<ImageButton  -->
+<!-- 			style="@style/TitleBarAction"  -->
+<!-- 			android:onClick="onTimerButtonClick" -->
+<!-- 			android:src="@drawable/ic_title_timer" /> -->
+ 
+		<requestFocus />
+	</LinearLayout>  
+	<!-- ActionBar End -->
+	
+<!-- edit -->
+	
+    <LinearLayout style="@style/RaimonBar"/>
+	<ScrollView
+	    android:id="@+id/scrollView1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+
+    	<LinearLayout 
+    	android:layout_height="wrap_content" 
+		android:layout_width="fill_parent"
+		android:orientation="vertical">
+		<LinearLayout 
+			style="@style/InformationForm"
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:orientation="vertical">
+	
+			<LinearLayout 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent"
+				android:layout_weight="1"
+				android:orientation="horizontal">
+				<LinearLayout 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content"
+					android:layout_weight="1"
+					android:orientation="vertical">
+					<!-- JANコード入力タイトル -->
+				    <TextView 
+						style="@style/InformationFormText2"
+						android:layout_height="wrap_content" 
+						android:layout_width="wrap_content"
+						android:text="@string/jan_code"/>
+					<!-- JANコード入力TextView -->
+				    <TextView
+						style="@style/InformationFormText2"
+						android:id="@+id/JanEdit"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:maxLength="13"/>
+				</LinearLayout> 
+				<ImageButton 
+						style="@style/InformationFormImage"
+						android:onClick="onLoadImageClick"
+						android:src="@drawable/img_ramen_noimage"
+						android:padding="0dip"
+						android:background="@android:color/transparent"
+						android:id="@+id/NoodleImageButton"/>
+			</LinearLayout> 
+	
+			<TextView
+				style="@style/InformationFormText2"
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent"
+				android:gravity="center_vertical"
+				android:text="@string/create_products"/>
+	
+			<EditText 
+				style="@style/InformationFormEdit2"
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/form_edittext_height"
+				android:hint="@string/create_products" 
+				android:id="@+id/NameEdit"
+				android:gravity="center_vertical"/>
+							
+			<TextView
+				style="@style/InformationFormText2"
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent"
+				android:gravity="center_vertical"
+				android:text="@string/create_time"/>			
+	 		<include layout="@layout/timer_set"/>
+		</LinearLayout>
+		<ImageView
+			android:id="@+id/ProgressIcon"
+			android:src="@drawable/img_progress"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:visibility="gone"
+			/>
+		<!-- Twitterへ投稿チェックボックス -->
+		<LinearLayout
+		    android:id="@+id/linearLayout1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center|center_vertical"
+		    android:padding="8dip">
+	
+		    <TextView
+			    android:id="@+id/textView1"
+			    style="@style/InformationFormText2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="fill_parent"
+			    android:gravity="center_vertical"
+			    android:padding="8dip"
+			    android:text="@string/checkbox_twitter">
+			</TextView>
+			<CheckBox android:text=""
+				android:layout_gravity="right"
+				android:id="@+id/checkBoxTwitter" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			</CheckBox>
+		</LinearLayout>
+		<!-- 登録ボタン -->
+		<LinearLayout
+		    android:id="@+id/linearLayout2"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" 
+		    android:padding="8dip">
+	
+			<Button
+			    android:id="@+id/CreateButton"
+			    style="@style/ButtonStyle"
+			    android:onClick="onCreateClick"
+			    android:text="@string/create_create" />
+	
+		</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

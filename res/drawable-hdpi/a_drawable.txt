@@ -1,0 +1,244 @@
+﻿drawableにて
+
+// 四角枠線画像を差し替える done
+// res/values/styles.xml にて
+        <style name="InformationForm">
+                <item name="android:layout_width">fill_parent</item>
+                <item name="android:layout_height">wrap_content</item>
+                <item name="android:background">@drawable/img_block_border</item>
+        </style>
+img_borderitem.9.png → img_block_border.9.png
+
+// 上記差し替えが終わったら削除する done
+img_borderitem.9.png
+
+// アクションバーで利用してないアイコン用xml削除 done
+ic_title_favorite.xml
+
+// 以下のファイル削除 done
+title_button.xml
+
+
+// クイックアクション用吹き出し
+img_popup_balloon.9.png
+img_popup_balloon_up.png
+img_popup_balloon_down.png
+
+// クイックアクション用セレクター
+// action_item_btn.xml差し替え 2011/06/06
+action_item_selecter.9.png
+// 以下のファイル削除 2011/06/06
+action_item_selected.9.png
+
+
+// アクションバー用ボタンxml追加 2011/05/28
+ic_title_fsearch.xml
+ic_title_hsearch.xml
+ic_title_rsearch.xml
+
+// アクションバー用ボタンxml
+// アクションバー修正後以下削除 2011/07/14
+ic_title_history.xml
+ic_title_timer.xml
+
+
+
+drawable-hdpiにて
+
+
+// 以下削除 done
+sample_btn_bg_defaultg6.9.png
+sample_btn_block_border_default.9.png
+sample_btn_block_border_pressed.9.png
+sample_btn_block_border_selected.9.png
+
+
+// ボタン背景画像
+btn_bg_default.9.png
+btn_bg_pressed.9.png
+// res/drawable内のbtn_bg.xmlにて
+// state_focused で slected を pressed に差し替え
+// ボタン背景画像 以下削除 2011/06/06
+btn_bg_selected.9.png
+
+
+// ListView用セレクター 
+// bg_selecter.xml差し替え 2011/06/06
+bg_selecter.9.png
+// 以下削除 2011/06/06
+bg_selecter_pressed.9.png
+bg_selecter_selected.9.png
+// 現在利用していないので削除 2011/06/06
+list_item_selecter.xml
+
+
+// ダッシュボード用ボタン
+home_btn_barcode_default.png
+home_btn_barcode_pressed.png
+home_btn_history_default.png
+home_btn_history_pressed.png
+home_btn_timer_default.png
+home_btn_timer_pressed.png
+home_btn_favorite_default.png
+home_btn_favorite_pressed.png
+// ダッシュボード用ボタン ← 追加
+home_btn_rsearch_default.png
+home_btn_rsearch_pressed.png
+home_btn_ramenlist_default.png
+home_btn_ramenlist_pressed.png
+// ダッシュボード用ボタン ← 追加予定
+// 文字検索にも対応した場合は以下の画像に差し替え
+home_btn_search_default.png
+home_btn_search_pressed.png
+
+// ダッシュボード用ボタン 以下実装未定のため削除 2011/05/28
+home_btn_synck_default.png
+home_btn_synck_pressed.png
+home_btn_synck_selected.png
+// ダッシュボード用ボタン 以下未使用のため削除 2011/06/06
+home_btn_ramenadd_default.png
+home_btn_ramenadd_pressed.png
+home_btn_ramenadd_selected.png
+// res/drawable内のhome_btn_hoge.xmlにて
+// state_focused で slected を pressed に差し替え
+// ダッシュボード用ボタン以下削除 2011/06/06
+home_btn_barcode_selected.png
+home_btn_history_selected.png
+home_btn_timer_selected.png
+home_btn_favorite_selected.png
+home_btn_rsearch_selected.png
+home_btn_ramenlist_selected.png
+home_btn_search_selected.png
+
+
+// アクションバー用アイコン
+ic_title_home_default.png
+ic_title_home_pressed.png
+ic_title_home_disable.png
+ic_title_barcode_default.png
+ic_title_barcode_pressed.png
+ic_title_barcode_disable.png
+ic_title_hsearch_default.png
+ic_title_hsearch_pressed.png
+ic_title_hsearch_disable.png
+ic_title_rsearch_default.png
+ic_title_rsearch_pressed.png
+ic_title_rsearch_disable.png
+// お気に入り検索用追加 2011/05/28
+ic_title_fsearch_default.png
+ic_title_fsearch_pressed.png
+ic_title_fsearch_disable.png
+// ダッシュボード用ボタン 追加予定
+// 文字検索にも対応した場合は以下の画像に差し替え
+ic_title_search_default.png
+ic_title_search_pressed.png
+ic_title_search_disable.png
+
+// アクションバー用アイコン
+// アクションバー修正後以下削除予定
+ic_title_history_default.png
+ic_title_history_pressed.png
+ic_title_history_disable.png
+ic_title_timer_default.png
+ic_title_timer_pressed.png
+ic_title_timer_disable.png
+
+// アクションバー用アイコン 以下削除 done
+ic_title_favorite_default.png
+ic_title_favorite_pressed.png
+ic_title_favorite_selected.png
+ic_title_favorite_disable.png
+ic_title_ramenadd_default.png
+ic_title_ramenadd_disable.png
+ic_title_ramenadd_pressed.png
+ic_title_ramenadd_selected.png
+
+// res/drawable内のic_title_hoge.xmlにて
+// state_focused で slected を pressed に差し替え
+// アクションバー用アイコン 以下削除 2011/06/06
+ic_title_home_selected.png
+ic_title_barcode_selected.png
+ic_title_hsearch_selected.png
+ic_title_rsearch_selected.png
+ic_title_fsearch_selected.png
+ic_title_search_selected.png
+ic_title_history_selected.png
+ic_title_timer_selected.png
+
+
+
+// タイトル用アイコン
+home_icon.png
+
+// タイトル用アプリ名
+home_title_appname.png
+
+// つ部ロゴ
+tsubu_logo_default.png
+tsubu_logo_pressed.png
+// res/drawable内のtsubu_logo.xmlにて
+// state_focused で slected を pressed に差し替え
+// 以下削除 2011/06/06
+tsubu_logo_selected.png
+
+// タイマー画面用ボタン
+timer_btn_plus_default.png
+timer_btn_plus_pressed.png
+timer_btn_plus_disable.png
+timer_btn_minus_default.png
+timer_btn_minus_pressed.png
+timer_btn_minus_disable.png
+// res/drawable内のtimer_btn_hoge.xmlにて
+// state_focused で slected を pressed に差し替え
+// 以下削除 2011/06/06
+timer_btn_plus_selected.png
+timer_btn_minus_selected.png
+
+// タイマー画面用アラーム画像
+img_alarm_default.png
+img_alarm_start.png
+img_alarm_end.png
+
+// チャルメラ画像削除 done
+img_charumera_default.png
+img_charumera_end.png
+img_charumera_start.png
+
+// ステータスバー用アイコン
+ic_stat_notify.png
+
+// クイックアクション用アイコン
+ic_popup_camera_default.png
+ic_popup_camera_pressed.png
+ic_popup_photos_default.png
+ic_popup_photos_pressed.png
+// クイックアクション用アイコン 追加予定
+ic_popup_delete_default.png
+ic_popup_delete_pressed.png
+ic_popup_edit_default.png
+ic_popup_edit_pressed.png
+
+// res/drawable内のic_popup_hoge.xmlにて
+// state_focused で slected を pressed に差し替え
+// クイックアクション用アイコン 以下削除 2011/06/06
+ic_popup_camera_selected.png
+ic_popup_photos_selected.png
+ic_popup_delete_selected.png
+ic_popup_edit_selected.png
+
+
+// らいもん画像 修正
+// res/drawable-hdpiへ移動 2011/06/06
+img_raimon.png
+raimon.xml
+
+// プログレスバー なると
+img_progress.png
+// ラーメン画像なし → 2011/05/22画像差し替え
+img_ramen_noimage.png
+// 履歴用罫線
+img_line_dotted.png
+
+// ランチャー用アイコン
+icon.png
+
